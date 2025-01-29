@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.home-variants {
+	background-color: #1c1c1c;
+	padding-top: 90px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.logo h2 {
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 5px;
+}
+
+.logo p {
+	color: #f8f8f8;
+	font-size: 21px;
+	font-weight: 100;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 55px;
+}
+
+.variant-box {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+ul.variant-list {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+ul.variant-list li {
+	float: left;
+	list-style: none;
+	width: 33.333333%;
+	padding: 25px;
+}
+
+ul.variant-list li a {
+	display: block;
+	text-decoration: none;
+}
+
+ul.variant-list li a img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -5px;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+ul.variant-list li a span {
+	display: block;
+	border: 2px solid #242424;
+	border-top-color: transparent;
+	color: rgba(255,255,255, 0.5);
+	padding: 15px 0;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+ul.variant-list li a:hover span {
+	color: #ffffff;
+	background-color: #3d3d3d;
+	border-color: transparent;
+}
+
+@media (max-width: 767px) {
+    ul.variant-list li {
+    	width: 100%;
+    }
+}
+
+
