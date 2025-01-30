@@ -3394,7 +3394,6 @@ section.services-section .services-box .services-post {
   text-align: center;
   padding: 60px 30px;
   background-color: #2c2c2c;
-  margin-bottom: 25px;
 }
 @media (max-width: 1023px) {
   section.services-section .services-box .services-post {
@@ -3672,5 +3671,14 @@ a.go-top:hover {
   transition: 1s all;
 }
 
+.wide-column {
+  grid-column: span 2;
+}
+.services-boxes {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 /*# sourceMappingURL=style.css.map */
