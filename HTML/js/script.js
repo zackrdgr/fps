@@ -431,11 +431,11 @@ $(document).ready(function($) {
 
 						setTimeout(() => {
 							document.getElementById("heroHeading").classList.add("show");
-						}, 500); // Heading animates first
+						}, 700); // Heading animates first
 					
 						setTimeout(() => {
 							document.getElementById("heroBtn").classList.add("show");
-						}, 800); // Button animates after 300ms delay
+						}, 1000); // Button animates after 300ms delay
 					}
 				}, 80 );
 		};

@@ -351,8 +351,9 @@ header .nav-menu-box ul.navigation-menu-list > li > a {
 
 /* hero */
 .hero-container {
-  margin: -25px 0 3rem 21rem;
-
+  margin-left: 21rem;
+  margin-top: -25px;
+  margin-bottom: 3rem;
 }
 .hero {
   color: #000000a1;
@@ -2317,9 +2318,7 @@ section.team-section .team-post .hover-team ul.social-team li {
   display: inline-block;
 }
 section.team-section .team-post .hover-team ul.social-team li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 42px;
   height: 42px;
   color: #ffffff;
