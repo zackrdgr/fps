@@ -351,7 +351,8 @@ header .nav-menu-box ul.navigation-menu-list > li > a {
 
 /* hero */
 .hero-container {
-  margin-left: -122px;
+  margin: -25px 0 3rem 21rem;
+
 }
 .hero {
   color: #000000a1;
@@ -372,11 +373,23 @@ header .nav-menu-box ul.navigation-menu-list > li > a {
   transform: rotate(-300deg);
   transition: 2.5s all;
 }
-.animate__rotateInUpRight {
-  --animate-duration: .75s;
-  /* --animate-delay: 5s; */
+.heroHeading, .theme-button {
+  opacity: 0;
+  transform: rotate(45deg) translate(100px, 100px);
+  transition: transform .5s ease-out, opacity .5s ease-out;
 }
-@media(max-width: 1023px) {
+
+.heroHeading.show {
+  opacity: 1;
+  transform: rotate(0deg) translate(0, 0);
+}
+
+.theme-button.show {
+  opacity: 1;
+  transform: rotate(0deg) translate(0, 0);
+  transition-delay: 0.3s; /* Delays the button animation slightly */
+}
+@media(max-width: 1279px) {
   .hero-container {
     margin-left: 0;
   }

@@ -429,10 +429,13 @@ $(document).ready(function($) {
 							onEndHeaderAnimation();
 						}
 
-						const heroHeading = document.getElementById('heroHeading');
-						const heroBtn = document.getElementById('heroBtn');
-						console.log('here')
-						heroHeading.style.transform = 'rotate(300deg)'
+						setTimeout(() => {
+							document.getElementById("heroHeading").classList.add("show");
+						}, 500); // Heading animates first
+					
+						setTimeout(() => {
+							document.getElementById("heroBtn").classList.add("show");
+						}, 800); // Button animates after 300ms delay
 					}
 				}, 80 );
 		};
