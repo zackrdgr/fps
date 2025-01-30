@@ -374,7 +374,7 @@ header .nav-menu-box ul.navigation-menu-list > li > a {
   transform: rotate(-300deg);
   transition: 2.5s all;
 }
-.heroHeading, .theme-button {
+.heroHeading, .heroBtn {
   opacity: 0;
   transform: rotate(45deg) translate(100px, 100px);
   transition: transform .5s ease-out, opacity .5s ease-out;
@@ -385,7 +385,7 @@ header .nav-menu-box ul.navigation-menu-list > li > a {
   transform: rotate(0deg) translate(0, 0);
 }
 
-.theme-button.show {
+.heroBtn.show {
   opacity: 1;
   transform: rotate(0deg) translate(0, 0);
   transition-delay: 0.3s; /* Delays the button animation slightly */
@@ -2269,6 +2269,17 @@ p.fixed-notifier span:after {
 section.team-section {
   padding: 70px 0;
   border-top: 1px solid #393939;
+}
+.team-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.team-member{
+  width: 30%;
+  min-width: 20rem;
 }
 section.team-section .team-box {
   padding-top: 10px;
