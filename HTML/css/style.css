@@ -2317,7 +2317,9 @@ section.team-section .team-post .hover-team ul.social-team li {
   display: inline-block;
 }
 section.team-section .team-post .hover-team ul.social-team li a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 42px;
   height: 42px;
   color: #ffffff;
