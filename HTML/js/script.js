@@ -456,3 +456,12 @@ function Resize() {
 	$(window).trigger('resize');
 }
 
+function formAlert() {
+	const formAlert=document.getElementById("formAlert")
+	formAlert.style.display="flex"
+	setTimeout(() => {
+		formAlert.style.opacity="1"
+	},10)
+}
+
+
