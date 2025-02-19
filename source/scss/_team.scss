@@ -1,0 +1,137 @@
+
+/*-------------------------------------------------- */
+/* team style
+/*------------------------------------------------- */
+
+section.team-section {
+	padding: 70px 0;
+	border-top: 1px solid #393939;
+	.team-box {
+		padding-top: 10px;
+		margin-bottom: 35px;
+	}
+	.team-post {
+		position: relative;
+		@include tablet {
+			margin-bottom: 30px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.image-holder {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #404040;
+				opacity: 0;
+				@include transition(0.2s);
+			}
+		}
+		&:hover {
+			.image-holder:before {
+				opacity: 0.95;
+			}
+		}
+		.hover-team {
+			padding: 50px 0 0;
+			text-align: center;
+			ul.social-team {
+				padding: 0;
+				margin: 0 0 18px;
+				li {
+					display: inline-block;
+					a {
+						display: inline-block;
+						width: 42px;
+						height: 42px;
+						color: #ffffff;
+						font-size: 15px;
+						line-height: 42px;
+						border: 1px solid #515151;
+						&:hover {
+							background-color: $primary-color;
+							border-color: transparent;
+						}
+					}
+				}
+			}
+			h3 {
+				display: inline-block;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					left: -25px;
+					width: 15px;
+					height: 2px;
+					top: 50%;
+					margin-top: -1px;
+					background-color: $primary-color;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					right: -25px;
+					width: 15px;
+					height: 2px;
+					top: 50%;
+					margin-top: -1px;
+					background-color: $primary-color;
+				}
+				@include tablet {
+					font-size: 20px;
+				}
+			}
+			span {
+				display: block;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 300;
+			}
+		}
+		&:hover {
+			.hover-team {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.light-version {
+	section.team-section {
+		border-color: #e0e0e0;
+		.team-box {
+			.team-post {
+				background-color: #ffffff;
+				.hover-team {
+					padding: 40px 10px;
+				}
+				.image-holder:before {
+					background-color: $primary-color2;
+				}
+				h3:before,
+				h3:after {
+					background-color: $primary-color2;
+				}
+				ul.social-team li a {
+					color: #6a6d74;
+					border-color: #e0e0e0;
+					&:hover {
+						color: #ffffff;
+						background-color: $primary-color2;
+						border-color: transparent;
+					}
+				}
+				span {
+					color: #6a6d74;
+				}
+			}
+		}
+	}
+}
